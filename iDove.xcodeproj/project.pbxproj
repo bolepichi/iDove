@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		021BA5381980197600507803 /* tabbackgroundselect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 021BA5351980197600507803 /* tabbackgroundselect@2x.png */; };
+		021BA53A1980197600507803 /* tabbarbackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 021BA5371980197600507803 /* tabbarbackground@2x.png */; };
 		18DA7D6D197FAFD70060783A /* THTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA7D6C197FAFD70060783A /* THTabBarViewController.m */; };
 		18E00E24197F88DB00659B82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E00E23197F88DB00659B82 /* Foundation.framework */; };
 		18E00E26197F88DB00659B82 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E00E25197F88DB00659B82 /* CoreGraphics.framework */; };
@@ -47,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		021BA5351980197600507803 /* tabbackgroundselect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbackgroundselect@2x.png"; path = "../tabbackgroundselect@2x.png"; sourceTree = "<group>"; };
+		021BA5371980197600507803 /* tabbarbackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbarbackground@2x.png"; path = "../tabbarbackground@2x.png"; sourceTree = "<group>"; };
 		18DA7D6B197FAFD70060783A /* THTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTabBarViewController.h; sourceTree = "<group>"; };
 		18DA7D6C197FAFD70060783A /* THTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTabBarViewController.m; sourceTree = "<group>"; };
 		18E00E20197F88DB00659B82 /* iDove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDove.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,13 +123,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18DA7D6E197FAFE60060783A /* Cotroller */ = {
+		021BA52B1980020D00507803 /* Tabar */ = {
+			isa = PBXGroup;
+			children = (
+				021BA5351980197600507803 /* tabbackgroundselect@2x.png */,
+				021BA5371980197600507803 /* tabbarbackground@2x.png */,
+			);
+			path = Tabar;
+			sourceTree = "<group>";
+		};
+		021BA5341980021800507803 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				021BA52B1980020D00507803 /* Tabar */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		18DA7D6E197FAFE60060783A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				18DA7D6B197FAFD70060783A /* THTabBarViewController.h */,
 				18DA7D6C197FAFD70060783A /* THTabBarViewController.m */,
 			);
-			name = Cotroller;
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		18E00E17197F88DA00659B82 = {
@@ -163,13 +184,14 @@
 		18E00E29197F88DB00659B82 /* iDove */ = {
 			isa = PBXGroup;
 			children = (
+				021BA5341980021800507803 /* Resource */,
 				18E00E71197F8A2D00659B82 /* Uitillities */,
 				18E00E5E197F899600659B82 /* Models */,
 				18E00E58197F891600659B82 /* libWeiboSDK */,
 				18E00E32197F88DB00659B82 /* THAppDelegate.h */,
 				18E00E33197F88DB00659B82 /* THAppDelegate.m */,
 				18E00E35197F88DB00659B82 /* Main.storyboard */,
-				18DA7D6E197FAFE60060783A /* Cotroller */,
+				18DA7D6E197FAFE60060783A /* Controller */,
 				18E00E38197F88DB00659B82 /* THViewController.h */,
 				18E00E39197F88DB00659B82 /* THViewController.m */,
 				18E00E3B197F88DB00659B82 /* Images.xcassets */,
@@ -328,9 +350,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				021BA53A1980197600507803 /* tabbarbackground@2x.png in Resources */,
 				18E00E3C197F88DB00659B82 /* Images.xcassets in Resources */,
 				18E00E2E197F88DB00659B82 /* InfoPlist.strings in Resources */,
 				18E00E37197F88DB00659B82 /* Main.storyboard in Resources */,
+				021BA5381980197600507803 /* tabbackgroundselect@2x.png in Resources */,
 				18E00E5D197F891600659B82 /* WeiboSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

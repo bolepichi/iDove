@@ -21,10 +21,17 @@
         // Custom initialization
         
         
-        
         UITabBar *tabBar = self.tabBar;
         
-        tabBar.backgroundColor = [UIColor blackColor];
+        
+        for (int i = 0; i<self.tabBar.items.count; i++) {
+            
+            UITabBarItem *tabBarItem = tabBar.items[0];
+        
+            tabBarItem = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@"tabbarbackground"] selectedImage:[UIImage imageNamed:@"tabbarbackgroundselect"]];
+            
+        }
+    
     }
     return self;
 }

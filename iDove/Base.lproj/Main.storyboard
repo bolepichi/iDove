@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PcZ-P9-qtm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="GYz-BB-V39">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller - Item-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController storyboardIdentifier="THViewController" id="vXZ-lx-hvc" customClass="THViewController" sceneMemberID="viewController">
@@ -26,12 +26,38 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="tLR-FC-Pox"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3020" y="-1172"/>
+            <point key="canvasLocation" x="-3312" y="-1716"/>
         </scene>
-        <!--View Controller - 我-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="Bzu-3l-S4X">
+            <objects>
+                <tabBarController storyboardIdentifier="THTabBarViewController" definesPresentationContext="YES" id="GYz-BB-V39" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" verticalCompressionResistancePriority="250" backgroundImage="tabbarbackground.png" id="f9V-57-QZg">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="YVe-qp-e8Z" kind="relationship" relationship="viewControllers" id="bts-Ls-l6V"/>
+                        <segue destination="bNQ-eR-ULc" kind="relationship" relationship="viewControllers" id="b8o-cH-krq"/>
+                        <segue destination="Ecw-2n-kVJ" kind="relationship" relationship="viewControllers" id="0ED-xo-g1d"/>
+                        <segue destination="EEd-kL-Av6" kind="relationship" relationship="viewControllers" id="btU-Yy-J8I"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9bq-Zt-nFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3546" y="-1010"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="unX-dH-X53">
             <objects>
                 <viewController id="bNQ-eR-ULc" sceneMemberID="viewController">
@@ -53,13 +79,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="我" id="DCU-F6-LUW"/>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="DCU-F6-LUW">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AJS-oc-JSK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-600" y="-385"/>
+            <point key="canvasLocation" x="-1952" y="-421"/>
         </scene>
-        <!--Table View Controller - 主页-->
+        <!--Table View Controller-->
         <scene sceneID="Sbr-Rg-9rh">
             <objects>
                 <tableViewController id="YVe-qp-e8Z" sceneMemberID="viewController">
@@ -82,13 +110,13 @@
                             <outlet property="delegate" destination="YVe-qp-e8Z" id="CWC-Po-to2"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="主页" id="ys1-2C-Nzh"/>
+                    <tabBarItem key="tabBarItem" image="tabbackgroundselect.png" id="e0Q-Db-dfD"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7qv-Ij-rf8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3020" y="-393"/>
+            <point key="canvasLocation" x="-3546" y="-375"/>
         </scene>
-        <!--View Controller - 查找-->
+        <!--View Controller-->
         <scene sceneID="xko-jK-iR2">
             <objects>
                 <viewController id="EEd-kL-Av6" sceneMemberID="viewController">
@@ -110,54 +138,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="查找" id="9qT-wE-QFd"/>
+                    <tabBarItem key="tabBarItem" title="" systemItem="search" id="TJW-zW-48u"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BDE-ga-e3K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1157" y="-385"/>
-        </scene>
-        <!--Tab Bar View Controller-->
-        <scene sceneID="Xe3-gS-reX">
-            <objects>
-                <tabBarController definesPresentationContext="YES" id="PcZ-P9-qtm" customClass="THTabBarViewController" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" selectionIndicatorImage="asdf.png" id="Kzm-G4-zxg">
-                        <rect key="frame" x="129" y="330" width="163" height="49"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="YVe-qp-e8Z" kind="relationship" relationship="viewControllers" id="cyA-75-wxj"/>
-                        <segue destination="Ecw-2n-kVJ" kind="relationship" relationship="viewControllers" id="dou-74-k3Y"/>
-                        <segue destination="hlN-0Z-6Rm" kind="relationship" relationship="viewControllers" id="bAI-MJ-cA6"/>
-                        <segue destination="EEd-kL-Av6" kind="relationship" relationship="viewControllers" id="cBz-rT-25s"/>
-                        <segue destination="bNQ-eR-ULc" kind="relationship" relationship="viewControllers" id="sVK-1E-CRM"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6ko-hw-uY7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1797" y="-1153"/>
+            <point key="canvasLocation" x="-2413" y="-421"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="bIR-VT-I4C">
-            <objects>
-                <viewController id="hlN-0Z-6Rm" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="DXq-Y4-xcV"/>
-                        <viewControllerLayoutGuide type="bottom" id="a1o-Qx-F9Z"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="cLS-g4-tM7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" id="yf6-d7-Zir"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9El-5L-jGm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1776" y="-385"/>
-        </scene>
-        <!--View Controller - 消息-->
         <scene sceneID="xGM-UD-Ad1">
             <objects>
                 <viewController id="Ecw-2n-kVJ" sceneMemberID="viewController">
@@ -179,15 +166,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="消息" id="0QL-da-Q2F"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="Ukm-wZ-qeJ">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H2E-cJ-WJR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2437" y="-385"/>
+            <point key="canvasLocation" x="-2885" y="-421"/>
         </scene>
     </scenes>
     <resources>
-        <image name="asdf.png" width="140" height="142"/>
+        <image name="tabbackgroundselect.png" width="80" height="49"/>
+        <image name="tabbarbackground.png" width="160" height="24"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
