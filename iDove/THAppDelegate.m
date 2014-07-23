@@ -27,12 +27,12 @@
     [WeiboSDK enableDebugMode:YES];
     [WeiboSDK registerApp:@"692164544"];
     
-    
-    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
-    THViewController *thVC = [storyBoard instantiateViewControllerWithIdentifier:@"THViewController"];
-    
-    self.window.rootViewController = thVC;
+//    
+//    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    
+//    THViewController *thVC = [storyBoard instantiateViewControllerWithIdentifier:@"THViewController"];
+//    
+//    self.window.rootViewController = thVC;
     
     return YES;
 }

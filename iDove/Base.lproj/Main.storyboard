@@ -15,12 +15,21 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EhL-ie-49o">
+                                <rect key="frame" x="115" y="246" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="登录新浪微博">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3453" y="-1302"/>
+            <point key="canvasLocation" x="-3020" y="-1172"/>
         </scene>
         <!--View Controller - 我-->
         <scene sceneID="unX-dH-X53">
@@ -48,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AJS-oc-JSK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-760" y="-277"/>
+            <point key="canvasLocation" x="-600" y="-385"/>
         </scene>
         <!--Table View Controller - 主页-->
         <scene sceneID="Sbr-Rg-9rh">
@@ -77,7 +86,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7qv-Ij-rf8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2701" y="-277"/>
+            <point key="canvasLocation" x="-3020" y="-393"/>
         </scene>
         <!--View Controller - 查找-->
         <scene sceneID="xko-jK-iR2">
@@ -105,14 +114,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BDE-ga-e3K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1397" y="-277"/>
+            <point key="canvasLocation" x="-1157" y="-385"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="Xe3-gS-reX">
             <objects>
-                <tabBarController definesPresentationContext="YES" id="PcZ-P9-qtm" sceneMemberID="viewController">
+                <tabBarController definesPresentationContext="YES" id="PcZ-P9-qtm" customClass="THTabBarViewController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="Kzm-G4-zxg">
+                    <tabBar key="tabBar" contentMode="scaleToFill" selectionIndicatorImage="asdf.png" id="Kzm-G4-zxg">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -120,6 +129,7 @@
                     <connections>
                         <segue destination="YVe-qp-e8Z" kind="relationship" relationship="viewControllers" id="cyA-75-wxj"/>
                         <segue destination="Ecw-2n-kVJ" kind="relationship" relationship="viewControllers" id="dou-74-k3Y"/>
+                        <segue destination="hlN-0Z-6Rm" kind="relationship" relationship="viewControllers" id="bAI-MJ-cA6"/>
                         <segue destination="EEd-kL-Av6" kind="relationship" relationship="viewControllers" id="cBz-rT-25s"/>
                         <segue destination="bNQ-eR-ULc" kind="relationship" relationship="viewControllers" id="sVK-1E-CRM"/>
                     </connections>
@@ -127,6 +137,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ko-hw-uY7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1797" y="-1153"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bIR-VT-I4C">
+            <objects>
+                <viewController id="hlN-0Z-6Rm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DXq-Y4-xcV"/>
+                        <viewControllerLayoutGuide type="bottom" id="a1o-Qx-F9Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cLS-g4-tM7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" id="yf6-d7-Zir"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9El-5L-jGm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1776" y="-385"/>
         </scene>
         <!--View Controller - 消息-->
         <scene sceneID="xGM-UD-Ad1">
@@ -154,9 +183,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H2E-cJ-WJR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2029" y="-277"/>
+            <point key="canvasLocation" x="-2437" y="-385"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="asdf.png" width="140" height="142"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

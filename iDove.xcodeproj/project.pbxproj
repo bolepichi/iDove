@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18DA7D6D197FAFD70060783A /* THTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA7D6C197FAFD70060783A /* THTabBarViewController.m */; };
 		18E00E24197F88DB00659B82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E00E23197F88DB00659B82 /* Foundation.framework */; };
 		18E00E26197F88DB00659B82 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E00E25197F88DB00659B82 /* CoreGraphics.framework */; };
 		18E00E28197F88DB00659B82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E00E27197F88DB00659B82 /* UIKit.framework */; };
@@ -46,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18DA7D6B197FAFD70060783A /* THTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTabBarViewController.h; sourceTree = "<group>"; };
+		18DA7D6C197FAFD70060783A /* THTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTabBarViewController.m; sourceTree = "<group>"; };
 		18E00E20197F88DB00659B82 /* iDove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E00E23197F88DB00659B82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18E00E25197F88DB00659B82 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -116,6 +119,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18DA7D6E197FAFE60060783A /* Cotroller */ = {
+			isa = PBXGroup;
+			children = (
+				18DA7D6B197FAFD70060783A /* THTabBarViewController.h */,
+				18DA7D6C197FAFD70060783A /* THTabBarViewController.m */,
+			);
+			name = Cotroller;
+			sourceTree = "<group>";
+		};
 		18E00E17197F88DA00659B82 = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +169,7 @@
 				18E00E32197F88DB00659B82 /* THAppDelegate.h */,
 				18E00E33197F88DB00659B82 /* THAppDelegate.m */,
 				18E00E35197F88DB00659B82 /* Main.storyboard */,
+				18DA7D6E197FAFE60060783A /* Cotroller */,
 				18E00E38197F88DB00659B82 /* THViewController.h */,
 				18E00E39197F88DB00659B82 /* THViewController.m */,
 				18E00E3B197F88DB00659B82 /* Images.xcassets */,
@@ -377,6 +390,7 @@
 				18E00E30197F88DB00659B82 /* main.m in Sources */,
 				18E00E79197F8A4200659B82 /* NSDictionary+Json.m in Sources */,
 				18E00E7A197F8A4200659B82 /* LHPathHelper.m in Sources */,
+				18DA7D6D197FAFD70060783A /* THTabBarViewController.m in Sources */,
 				18E00E6F197F89AC00659B82 /* LHStatus.m in Sources */,
 				18E00E70197F89AC00659B82 /* LHStatusVisible.m in Sources */,
 				18E00E78197F8A4200659B82 /* Resources.m in Sources */,
