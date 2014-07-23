@@ -10,6 +10,8 @@
 
 #import "WeiboSDK.h"
 
+#import "THViewController.h"
+
 @interface THAppDelegate () <WeiboSDKDelegate>
 
 
@@ -25,6 +27,12 @@
     [WeiboSDK enableDebugMode:YES];
     [WeiboSDK registerApp:@"692164544"];
     
+    
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    THViewController *thVC = [storyBoard instantiateViewControllerWithIdentifier:@"THViewController"];
+    
+    self.window.rootViewController = thVC;
     
     return YES;
 }
