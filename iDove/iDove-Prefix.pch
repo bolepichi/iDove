@@ -19,5 +19,11 @@
 
 #define kAppKey @"692164544"
 #define kAppSecret @"abef54d0aea647428c01a24631741aca"
-
 #define kRedirectURL @"http://www.idove.com"
+
+
+#define url_user @"https://api.weibo.com/2/users/show.json?"
+
+#define url_geoLocation @"https://api.weibo.com/2/location/geo/geo_to_address.json"
+
+#define url_statusFriends @"https://api.weibo.com/2/statuses/friends_timeline.json"

@@ -10,12 +10,13 @@
 
 #import "WeiboSDK.h"
 
-#import "THViewController.h"
-
 #import "LHWbAccount.h"
 
 #import "THTabBarController.h"
 
+#import "RequestData.h"
+
+#import "LoginViewController.h"
 
 
 @interface THAppDelegate () <WeiboSDKDelegate>
@@ -35,8 +36,10 @@
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
+    LoginViewController *loginVC = [[LoginViewController alloc]initWithNibName:@"LoginViewController" bundle:nil];
+    
     THTabBarController * tabbarViewController = [[THTabBarController alloc] initWithNibName:nil bundle:nil];
-    self.window.rootViewController = tabbarViewController;
+    self.window.rootViewController = loginVC;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
@@ -95,39 +98,42 @@
     
     if ([response isKindOfClass:WBAuthorizeResponse.class]) {
         
-        WBAuthorizeResponse *authResponse = (WBAuthorizeResponse *)response;
+        if (!response.userInfo) {
+            
+            
+        }else{
         
-        
-        NSDictionary *parameters = @{@"uid": authResponse.userID,@"access_token":authResponse.accessToken};
-        
-        
-        AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc]init];
-        manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-        manager.responseSerializer.acceptableContentTypes =[NSSet setWithObject:@"application/json"];
-        
-        [manager GET:@"https://api.weibo.com/2/users/show.json?" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
-            
-            id jsonObj = [NSJSONSerialization JSONObjectWithData:(NSData*)responseObject options:NSJSONReadingMutableContainers error:nil];
-            
-            NSDictionary *dic_json = (NSDictionary*)jsonObj;
+            WBAuthorizeResponse *authResponse = (WBAuthorizeResponse *)response;
             
             
-            LHWbAuthentication *authentication = [[LHWbAuthentication alloc]initWithAuthorizeID:authResponse.userID accessToken:authResponse.accessToken expirationDate:authResponse.expirationDate AppKey:kAppKey appSecret:kAppSecret];
-            
-            LHUser *user = [[LHUser alloc]initWithJsonDictionary:dic_json];
-            
-            LHWbAccount * wbAccount = [[LHWbAccount alloc]initWithAuthentication:authentication user:user];
-            
-            [wbAccount writeUserInfoToDocuments];
+            NSDictionary *parameters = @{@"uid": authResponse.userID,@"access_token":authResponse.accessToken};
             
             
-        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            [RequestData getRequest:parameters WithRequestUrlString:url_user message:^(NSDictionary *dict, NSString *success, NSString *failure) {
+                if (dict) {
+                    LHWbAuthentication *authentication = [[LHWbAuthentication alloc]initWithAuthorizeID:authResponse.userID accessToken:authResponse.accessToken expirationDate:authResponse.expirationDate AppKey:kAppKey appSecret:kAppSecret];
+                    
+                    LHUser *user = [[LHUser alloc]initWithJsonDictionary:dict];
+                    
+                    LHWbAccount * wbAccount = [[LHWbAccount alloc]initWithAuthentication:authentication user:user];
+                    
+                    [wbAccount writeUserInfoToDocuments];
+                    
+                    
+                    THTabBarController * tabbarViewController = [[THTabBarController alloc] initWithNibName:nil bundle:nil];
+                    
+                    self.window.rootViewController = tabbarViewController;
+                    
+                }
+                else{
+                    NSLog(@"%@",failure);
+                }
+                
+            }];
+
             
-            NSLog(@"%@",[error description]);
-            
-            
-        }];
-        
+        }
+  
     }
     
     

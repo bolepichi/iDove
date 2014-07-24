@@ -13,7 +13,6 @@
 		18E00E2E197F88DB00659B82 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18E00E2C197F88DB00659B82 /* InfoPlist.strings */; };
 		18E00E30197F88DB00659B82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E00E2F197F88DB00659B82 /* main.m */; };
 		18E00E34197F88DB00659B82 /* THAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E00E33197F88DB00659B82 /* THAppDelegate.m */; };
-		18E00E3A197F88DB00659B82 /* THViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E00E39197F88DB00659B82 /* THViewController.m */; };
 		18E00E3C197F88DB00659B82 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E00E3B197F88DB00659B82 /* Images.xcassets */; };
 		18E00E43197F88DB00659B82 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E00E42197F88DB00659B82 /* XCTest.framework */; };
 		18E00E44197F88DB00659B82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E00E23197F88DB00659B82 /* Foundation.framework */; };
@@ -48,6 +47,9 @@
 		3C4396B49B274255B92D3F98 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7652F1DBB99D478A8C78FF0C /* libPods.a */; };
 		4A2F9232197FBE7400278825 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		4AB9DE8A1980A701002ACB07 /* LHWbAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB9DE891980A701002ACB07 /* LHWbAuthentication.m */; };
+		4AB9DE8E1980E0E3002ACB07 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB9DE8C1980E0E3002ACB07 /* LoginViewController.m */; };
+		4AB9DE8F1980E0E3002ACB07 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AB9DE8D1980E0E3002ACB07 /* LoginViewController.xib */; };
+		4AB9DED31980F01F002ACB07 /* RequestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB9DED21980F01F002ACB07 /* RequestData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,8 +73,6 @@
 		18E00E31197F88DB00659B82 /* iDove-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iDove-Prefix.pch"; sourceTree = "<group>"; };
 		18E00E32197F88DB00659B82 /* THAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THAppDelegate.h; sourceTree = "<group>"; };
 		18E00E33197F88DB00659B82 /* THAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THAppDelegate.m; sourceTree = "<group>"; };
-		18E00E38197F88DB00659B82 /* THViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THViewController.h; sourceTree = "<group>"; };
-		18E00E39197F88DB00659B82 /* THViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THViewController.m; sourceTree = "<group>"; };
 		18E00E3B197F88DB00659B82 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18E00E41197F88DB00659B82 /* iDoveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iDoveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E00E42197F88DB00659B82 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -119,6 +119,11 @@
 		18FCC5031980DBF300CBB43C /* tabimageselect3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabimageselect3@2x.png"; sourceTree = "<group>"; };
 		4AB9DE881980A701002ACB07 /* LHWbAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHWbAuthentication.h; sourceTree = "<group>"; };
 		4AB9DE891980A701002ACB07 /* LHWbAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHWbAuthentication.m; sourceTree = "<group>"; };
+		4AB9DE8B1980E0E3002ACB07 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		4AB9DE8C1980E0E3002ACB07 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		4AB9DE8D1980E0E3002ACB07 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		4AB9DED11980F01F002ACB07 /* RequestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestData.h; sourceTree = "<group>"; };
+		4AB9DED21980F01F002ACB07 /* RequestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestData.m; sourceTree = "<group>"; };
 		7652F1DBB99D478A8C78FF0C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A12B419CA91F4D00A83A1210 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -217,8 +222,9 @@
 				18E00E32197F88DB00659B82 /* THAppDelegate.h */,
 				18E00E33197F88DB00659B82 /* THAppDelegate.m */,
 				18DA7D6E197FAFE60060783A /* Controller */,
-				18E00E38197F88DB00659B82 /* THViewController.h */,
-				18E00E39197F88DB00659B82 /* THViewController.m */,
+				4AB9DE8B1980E0E3002ACB07 /* LoginViewController.h */,
+				4AB9DE8C1980E0E3002ACB07 /* LoginViewController.m */,
+				4AB9DE8D1980E0E3002ACB07 /* LoginViewController.xib */,
 				18E00E3B197F88DB00659B82 /* Images.xcassets */,
 				18E00E2A197F88DB00659B82 /* Supporting Files */,
 			);
@@ -292,6 +298,8 @@
 				18E00E75197F8A4200659B82 /* NSDictionary+Json.m */,
 				18E00E76197F8A4200659B82 /* LHPathHelper.h */,
 				18E00E77197F8A4200659B82 /* LHPathHelper.m */,
+				4AB9DED11980F01F002ACB07 /* RequestData.h */,
+				4AB9DED21980F01F002ACB07 /* RequestData.m */,
 			);
 			name = Uitillities;
 			sourceTree = "<group>";
@@ -395,6 +403,7 @@
 				18FCC5041980DBF300CBB43C /* tabimage0@2x.png in Resources */,
 				18FCC5071980DBF300CBB43C /* tabimage3@2x.png in Resources */,
 				18FCC50B1980DBF300CBB43C /* tabimageselect3@2x.png in Resources */,
+				4AB9DE8F1980E0E3002ACB07 /* LoginViewController.xib in Resources */,
 				18FCC5061980DBF300CBB43C /* tabimage2@2x.png in Resources */,
 				18FCC4EC1980AF0B00CBB43C /* LHStatuseTableViewController.xib in Resources */,
 				18E00E3C197F88DB00659B82 /* Images.xcassets in Resources */,
@@ -456,7 +465,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A2F9232197FBE7400278825 /* (null) in Sources */,
-				18E00E3A197F88DB00659B82 /* THViewController.m in Sources */,
 				18FCC4F51980AFBC00CBB43C /* THUserCenterViewController.m in Sources */,
 				18E00E6E197F89AC00659B82 /* LHGeo.m in Sources */,
 				18E00E34197F88DB00659B82 /* THAppDelegate.m in Sources */,
@@ -469,6 +477,8 @@
 				18E00E70197F89AC00659B82 /* LHStatusVisible.m in Sources */,
 				4AB9DE8A1980A701002ACB07 /* LHWbAuthentication.m in Sources */,
 				18E00E78197F8A4200659B82 /* Resources.m in Sources */,
+				4AB9DED31980F01F002ACB07 /* RequestData.m in Sources */,
+				4AB9DE8E1980E0E3002ACB07 /* LoginViewController.m in Sources */,
 				18E00E6D197F89AC00659B82 /* LHUser.m in Sources */,
 				18E00E6C197F89AC00659B82 /* LHWbAccount.m in Sources */,
 				18FCC4E61980ABA900CBB43C /* THTabBarController.m in Sources */,

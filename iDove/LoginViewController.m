@@ -1,40 +1,39 @@
 //
-//  THViewController.m
+//  LoginViewController.m
 //  iDove
 //
-//  Created by Taagoo'iMac on 14-7-23.
+//  Created by apple on 14-7-24.
 //  Copyright (c) 2014年 Taagoo. All rights reserved.
 //
 
-#import "THViewController.h"
+#import "LoginViewController.h"
+
 #import "WeiboSDK.h"
 
-@interface THViewController ()
+
+@interface LoginViewController ()
 
 @end
 
-@implementation THViewController
+@implementation LoginViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-
-    
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(100,100,80,40);
-    button.backgroundColor = [UIColor blueColor];
-    button.tag = 1;
-    [button setTitle:@"login" forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(loginButton:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button];
-    
-    
+    // Do any additional setup after loading the view from its nib.
 }
 
--(void)loginButton:(UIButton *)sender
+-(IBAction)loginButton:(id)sender
 {
-    
     WBAuthorizeRequest *request = [WBAuthorizeRequest request];
     
     request.redirectURI = kRedirectURL;
@@ -44,13 +43,7 @@
                          @"Other_Info_2": @[@"obj1", @"obj2"],
                          @"Other_Info_3": @{@"key1": @"obj1", @"key2": @"obj2"}};
     [WeiboSDK sendRequest:request];
-    
 }
-
-
-
-
-
 
 
 - (void)didReceiveMemoryWarning
