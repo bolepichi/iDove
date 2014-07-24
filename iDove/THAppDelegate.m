@@ -30,11 +30,29 @@
     [WeiboSDK registerApp:kAppKey];
     
     
-    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     
-    THViewController *thVC = [storyBoard instantiateViewControllerWithIdentifier:@"THViewController"];
     
-    self.window.rootViewController = thVC;
+    
+    UITabBarController * tabbarcontroller = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"THTabBarViewController"];
+    
+    
+    UITabBar *tabbar = tabbarcontroller.tabBar;
+    
+    
+    UITabBarItem *tabbarItem1 = tabbar.items[0];
+    
+    tabbarItem1.selectedImage = [UIImage imageNamed:@"tabbackgroundselect"];
+    
+    tabbarItem1.title = @"lkj";
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
