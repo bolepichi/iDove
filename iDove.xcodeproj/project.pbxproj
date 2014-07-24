@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		021BA5381980197600507803 /* tabbackgroundselect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 021BA5351980197600507803 /* tabbackgroundselect@2x.png */; };
-		021BA53A1980197600507803 /* tabbarbackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 021BA5371980197600507803 /* tabbarbackground@2x.png */; };
 		18DA7D6D197FAFD70060783A /* THTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA7D6C197FAFD70060783A /* THTabBarViewController.m */; };
 		18E00E24197F88DB00659B82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E00E23197F88DB00659B82 /* Foundation.framework */; };
 		18E00E26197F88DB00659B82 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E00E25197F88DB00659B82 /* CoreGraphics.framework */; };
@@ -35,6 +33,8 @@
 		18E00E78197F8A4200659B82 /* Resources.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E00E73197F8A4200659B82 /* Resources.m */; };
 		18E00E79197F8A4200659B82 /* NSDictionary+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E00E75197F8A4200659B82 /* NSDictionary+Json.m */; };
 		18E00E7A197F8A4200659B82 /* LHPathHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E00E77197F8A4200659B82 /* LHPathHelper.m */; };
+		18FCC4DE1980A35A00CBB43C /* tabground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FCC4DC1980A35A00CBB43C /* tabground@2x.png */; };
+		18FCC4DF1980A35A00CBB43C /* tabselect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FCC4DD1980A35A00CBB43C /* tabselect@2x.png */; };
 		3C4396B49B274255B92D3F98 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7652F1DBB99D478A8C78FF0C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -49,8 +49,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		021BA5351980197600507803 /* tabbackgroundselect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbackgroundselect@2x.png"; path = "../tabbackgroundselect@2x.png"; sourceTree = "<group>"; };
-		021BA5371980197600507803 /* tabbarbackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbarbackground@2x.png"; path = "../tabbarbackground@2x.png"; sourceTree = "<group>"; };
 		18DA7D6B197FAFD70060783A /* THTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTabBarViewController.h; sourceTree = "<group>"; };
 		18DA7D6C197FAFD70060783A /* THTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTabBarViewController.m; sourceTree = "<group>"; };
 		18E00E20197F88DB00659B82 /* iDove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDove.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +91,8 @@
 		18E00E75197F8A4200659B82 /* NSDictionary+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Json.m"; sourceTree = "<group>"; };
 		18E00E76197F8A4200659B82 /* LHPathHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHPathHelper.h; sourceTree = "<group>"; };
 		18E00E77197F8A4200659B82 /* LHPathHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHPathHelper.m; sourceTree = "<group>"; };
+		18FCC4DC1980A35A00CBB43C /* tabground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabground@2x.png"; sourceTree = "<group>"; };
+		18FCC4DD1980A35A00CBB43C /* tabselect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabselect@2x.png"; sourceTree = "<group>"; };
 		7652F1DBB99D478A8C78FF0C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A12B419CA91F4D00A83A1210 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,19 +123,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		021BA52B1980020D00507803 /* Tabar */ = {
-			isa = PBXGroup;
-			children = (
-				021BA5351980197600507803 /* tabbackgroundselect@2x.png */,
-				021BA5371980197600507803 /* tabbarbackground@2x.png */,
-			);
-			path = Tabar;
-			sourceTree = "<group>";
-		};
 		021BA5341980021800507803 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				021BA52B1980020D00507803 /* Tabar */,
+				18FCC4E01980A36B00CBB43C /* Tabbar */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -271,6 +262,15 @@
 			name = Uitillities;
 			sourceTree = "<group>";
 		};
+		18FCC4E01980A36B00CBB43C /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				18FCC4DC1980A35A00CBB43C /* tabground@2x.png */,
+				18FCC4DD1980A35A00CBB43C /* tabselect@2x.png */,
+			);
+			name = Tabbar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -350,11 +350,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				021BA53A1980197600507803 /* tabbarbackground@2x.png in Resources */,
 				18E00E3C197F88DB00659B82 /* Images.xcassets in Resources */,
 				18E00E2E197F88DB00659B82 /* InfoPlist.strings in Resources */,
+				18FCC4DF1980A35A00CBB43C /* tabselect@2x.png in Resources */,
+				18FCC4DE1980A35A00CBB43C /* tabground@2x.png in Resources */,
 				18E00E37197F88DB00659B82 /* Main.storyboard in Resources */,
-				021BA5381980197600507803 /* tabbackgroundselect@2x.png in Resources */,
 				18E00E5D197F891600659B82 /* WeiboSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

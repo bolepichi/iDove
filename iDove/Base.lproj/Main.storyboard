@@ -38,7 +38,7 @@
                 <tabBarController storyboardIdentifier="THTabBarViewController" definesPresentationContext="YES" id="GYz-BB-V39" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" verticalCompressionResistancePriority="250" backgroundImage="tabbarbackground.png" id="f9V-57-QZg">
+                    <tabBar key="tabBar" contentMode="scaleToFill" verticalCompressionResistancePriority="250" backgroundImage="tabground.png" selectionIndicatorImage="tabselect.png" id="f9V-57-QZg">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -79,9 +79,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="DCU-F6-LUW">
-                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="DCU-F6-LUW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AJS-oc-JSK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -110,7 +108,7 @@
                             <outlet property="delegate" destination="YVe-qp-e8Z" id="CWC-Po-to2"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" image="tabbackgroundselect.png" id="e0Q-Db-dfD"/>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="e0Q-Db-dfD"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7qv-Ij-rf8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -176,8 +174,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="tabbackgroundselect.png" width="80" height="49"/>
-        <image name="tabbarbackground.png" width="160" height="24"/>
+        <image name="tabground.png" width="146" height="40"/>
+        <image name="tabselect.png" width="80" height="49"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
