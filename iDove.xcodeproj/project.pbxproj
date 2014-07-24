@@ -35,7 +35,8 @@
 		18FCC4DE1980A35A00CBB43C /* tabground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FCC4DC1980A35A00CBB43C /* tabground@2x.png */; };
 		18FCC4DF1980A35A00CBB43C /* tabselect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FCC4DD1980A35A00CBB43C /* tabselect@2x.png */; };
 		3C4396B49B274255B92D3F98 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7652F1DBB99D478A8C78FF0C /* libPods.a */; };
-		4A2F9232197FBE7400278825 /* LHWbAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F9231197FBE7400278825 /* LHWbAuthentication.m */; };
+		4A2F9232197FBE7400278825 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		4AB9DE8A1980A701002ACB07 /* LHWbAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB9DE891980A701002ACB07 /* LHWbAuthentication.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,8 @@
 		18E00E77197F8A4200659B82 /* LHPathHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHPathHelper.m; sourceTree = "<group>"; };
 		18FCC4DC1980A35A00CBB43C /* tabground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabground@2x.png"; sourceTree = "<group>"; };
 		18FCC4DD1980A35A00CBB43C /* tabselect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabselect@2x.png"; sourceTree = "<group>"; };
+		4AB9DE881980A701002ACB07 /* LHWbAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHWbAuthentication.h; sourceTree = "<group>"; };
+		4AB9DE891980A701002ACB07 /* LHWbAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHWbAuthentication.m; sourceTree = "<group>"; };
 		7652F1DBB99D478A8C78FF0C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A12B419CA91F4D00A83A1210 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -231,8 +234,8 @@
 		18E00E5E197F899600659B82 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4A2F9230197FBE7400278825 /* LHWbAuthentication.h */,
-				4A2F9231197FBE7400278825 /* LHWbAuthentication.m */,
+				4AB9DE881980A701002ACB07 /* LHWbAuthentication.h */,
+				4AB9DE891980A701002ACB07 /* LHWbAuthentication.m */,
 				18E00E61197F89AC00659B82 /* LHWbAccount.h */,
 				18E00E62197F89AC00659B82 /* LHWbAccount.m */,
 				18E00E63197F89AC00659B82 /* LHUser.h */,
@@ -405,7 +408,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A2F9232197FBE7400278825 /* LHWbAuthentication.m in Sources */,
+				4A2F9232197FBE7400278825 /* (null) in Sources */,
 				18E00E3A197F88DB00659B82 /* THViewController.m in Sources */,
 				18E00E6E197F89AC00659B82 /* LHGeo.m in Sources */,
 				18E00E34197F88DB00659B82 /* THAppDelegate.m in Sources */,
@@ -415,6 +418,7 @@
 				18DA7D6D197FAFD70060783A /* THTabBarViewController.m in Sources */,
 				18E00E6F197F89AC00659B82 /* LHStatus.m in Sources */,
 				18E00E70197F89AC00659B82 /* LHStatusVisible.m in Sources */,
+				4AB9DE8A1980A701002ACB07 /* LHWbAuthentication.m in Sources */,
 				18E00E78197F8A4200659B82 /* Resources.m in Sources */,
 				18E00E6D197F89AC00659B82 /* LHUser.m in Sources */,
 				18E00E6C197F89AC00659B82 /* LHWbAccount.m in Sources */,
