@@ -25,6 +25,6 @@
 -(void)writeUserInfoToDocuments;
 
 //读取归档
--(void)readUserInfoFromDocuments;
++(LHWbAccount *)readUserInfoFromDocuments;
 
 @end
