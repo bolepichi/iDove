@@ -16,6 +16,7 @@
 
 #import "THTabBarController.h"
 
+#import <AFNetworking/AFNetworking.h>
 
 
 @interface THAppDelegate () <WeiboSDKDelegate>
