@@ -14,3 +14,10 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+
+
+#define kAppKey @"692164544"
+#define kAppSecret @"abef54d0aea647428c01a24631741aca"
+
+#define kRedirectURL @"http://www.idove.com"

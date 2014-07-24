@@ -29,6 +29,34 @@
     return self;
 }
 
+// 写入归档
+-(void)writeUserInfoToDocuments{
+    
+    NSString *fileDir = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"userinfo.arc"];
+    
+    NSLog(@"%@",fileDir);
+    
+    [NSKeyedArchiver archiveRootObject:self toFile:fileDir];
+    
+}
+
+//读取归档
+-(void)readUserInfoFromDocuments{
+    
+    NSString *fileDir =  [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"userinfo.arc"];
+    
+    LHWbAccount *wbAccount;
+        
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    if ([fileManager fileExistsAtPath:fileDir]) {
+        
+        wbAccount = [NSKeyedUnarchiver unarchiveObjectWithFile:fileDir];
+    }
+
+    
+}
+
 
 -(void)encodeWithCoder:(NSCoder *)encoder
 {

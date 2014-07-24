@@ -23,7 +23,6 @@
 		18E00E4F197F88DB00659B82 /* iDoveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E00E4E197F88DB00659B82 /* iDoveTests.m */; };
 		18E00E5C197F891600659B82 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E00E59197F891600659B82 /* libWeiboSDK.a */; };
 		18E00E5D197F891600659B82 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18E00E5A197F891600659B82 /* WeiboSDK.bundle */; };
-		18E00E6B197F89AC00659B82 /* LHWbAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E00E60197F89AC00659B82 /* LHWbAuthentication.m */; };
 		18E00E6C197F89AC00659B82 /* LHWbAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E00E62197F89AC00659B82 /* LHWbAccount.m */; };
 		18E00E6D197F89AC00659B82 /* LHUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E00E64197F89AC00659B82 /* LHUser.m */; };
 		18E00E6E197F89AC00659B82 /* LHGeo.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E00E66197F89AC00659B82 /* LHGeo.m */; };
@@ -33,6 +32,7 @@
 		18E00E79197F8A4200659B82 /* NSDictionary+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E00E75197F8A4200659B82 /* NSDictionary+Json.m */; };
 		18E00E7A197F8A4200659B82 /* LHPathHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E00E77197F8A4200659B82 /* LHPathHelper.m */; };
 		3C4396B49B274255B92D3F98 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7652F1DBB99D478A8C78FF0C /* libPods.a */; };
+		4A2F9232197FBE7400278825 /* LHWbAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F9231197FBE7400278825 /* LHWbAuthentication.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,8 +68,6 @@
 		18E00E59197F891600659B82 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
 		18E00E5A197F891600659B82 /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
 		18E00E5B197F891600659B82 /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
-		18E00E5F197F89AC00659B82 /* LHWbAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHWbAuthentication.h; sourceTree = "<group>"; };
-		18E00E60197F89AC00659B82 /* LHWbAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHWbAuthentication.m; sourceTree = "<group>"; };
 		18E00E61197F89AC00659B82 /* LHWbAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHWbAccount.h; sourceTree = "<group>"; };
 		18E00E62197F89AC00659B82 /* LHWbAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHWbAccount.m; sourceTree = "<group>"; };
 		18E00E63197F89AC00659B82 /* LHUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHUser.h; sourceTree = "<group>"; };
@@ -86,6 +84,8 @@
 		18E00E75197F8A4200659B82 /* NSDictionary+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Json.m"; sourceTree = "<group>"; };
 		18E00E76197F8A4200659B82 /* LHPathHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHPathHelper.h; sourceTree = "<group>"; };
 		18E00E77197F8A4200659B82 /* LHPathHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHPathHelper.m; sourceTree = "<group>"; };
+		4A2F9230197FBE7400278825 /* LHWbAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHWbAuthentication.h; sourceTree = "<group>"; };
+		4A2F9231197FBE7400278825 /* LHWbAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHWbAuthentication.m; sourceTree = "<group>"; };
 		7652F1DBB99D478A8C78FF0C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A12B419CA91F4D00A83A1210 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -207,8 +207,8 @@
 		18E00E5E197F899600659B82 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				18E00E5F197F89AC00659B82 /* LHWbAuthentication.h */,
-				18E00E60197F89AC00659B82 /* LHWbAuthentication.m */,
+				4A2F9230197FBE7400278825 /* LHWbAuthentication.h */,
+				4A2F9231197FBE7400278825 /* LHWbAuthentication.m */,
 				18E00E61197F89AC00659B82 /* LHWbAccount.h */,
 				18E00E62197F89AC00659B82 /* LHWbAccount.m */,
 				18E00E63197F89AC00659B82 /* LHUser.h */,
@@ -370,7 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18E00E6B197F89AC00659B82 /* LHWbAuthentication.m in Sources */,
+				4A2F9232197FBE7400278825 /* LHWbAuthentication.m in Sources */,
 				18E00E3A197F88DB00659B82 /* THViewController.m in Sources */,
 				18E00E6E197F89AC00659B82 /* LHGeo.m in Sources */,
 				18E00E34197F88DB00659B82 /* THAppDelegate.m in Sources */,
