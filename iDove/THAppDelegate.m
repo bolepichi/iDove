@@ -14,6 +14,8 @@
 
 #import "LHWbAccount.h"
 
+#import <AFNetworking/AFNetworking.h>
+
 @interface THAppDelegate () <WeiboSDKDelegate>
 
 
@@ -108,23 +110,42 @@
 -(void)didReceiveWeiboResponse:(WBBaseResponse *)response
 {
     
-    WBAuthorizeResponse *authResponse = (WBAuthorizeResponse *)response;
-    
-    
-    
-    LHWbAuthentication *authentication = [[LHWbAuthentication alloc]initWithAuthorizeID:authResponse.userID accessToken:authResponse.accessToken expirationDate:authResponse.expirationDate AppKey:kAppKey appSecret:kAppSecret];
-    
-    
-    
-    NSDictionary *dic = @{};
-    
-    LHUser *user = [[LHUser alloc]initWithJsonDictionary:dic];
-    
-    
-    
-    LHWbAccount * wbAccount = [[LHWbAccount alloc]initWithAuthentication:authentication user:user];
-    
-    [wbAccount writeUserInfoToDocuments];
+    if ([response isKindOfClass:WBAuthorizeResponse.class]) {
+        
+        WBAuthorizeResponse *authResponse = (WBAuthorizeResponse *)response;
+        
+        
+        NSDictionary *parameters = @{@"uid": authResponse.userID,@"access_token":authResponse.accessToken};
+        
+        
+        AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc]init];
+        manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+        manager.responseSerializer.acceptableContentTypes =[NSSet setWithObject:@"application/json"];
+        
+        [manager GET:@"https://api.weibo.com/2/users/show.json?" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+            
+            id jsonObj = [NSJSONSerialization JSONObjectWithData:(NSData*)responseObject options:NSJSONReadingMutableContainers error:nil];
+            
+            NSDictionary *dic_json = (NSDictionary*)jsonObj;
+            
+            
+            LHWbAuthentication *authentication = [[LHWbAuthentication alloc]initWithAuthorizeID:authResponse.userID accessToken:authResponse.accessToken expirationDate:authResponse.expirationDate AppKey:kAppKey appSecret:kAppSecret];
+            
+            LHUser *user = [[LHUser alloc]initWithJsonDictionary:dic_json];
+            
+            LHWbAccount * wbAccount = [[LHWbAccount alloc]initWithAuthentication:authentication user:user];
+            
+            [wbAccount writeUserInfoToDocuments];
+            
+            
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            
+            NSLog(@"%@",[error description]);
+            
+            
+        }];
+        
+    }
     
     
 }

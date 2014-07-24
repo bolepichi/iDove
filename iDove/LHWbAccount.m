@@ -41,19 +41,20 @@
 }
 
 //读取归档
--(void)readUserInfoFromDocuments{
++(LHWbAccount *)readUserInfoFromDocuments{
     
     NSString *fileDir =  [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"userinfo.arc"];
     
     LHWbAccount *wbAccount;
-        
+    
     NSFileManager *fileManager = [NSFileManager defaultManager];
     
     if ([fileManager fileExistsAtPath:fileDir]) {
         
         wbAccount = [NSKeyedUnarchiver unarchiveObjectWithFile:fileDir];
     }
-
+    
+    return wbAccount;
     
 }
 
