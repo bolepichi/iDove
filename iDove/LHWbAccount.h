@@ -20,4 +20,11 @@
 - (id)initWithAuthentication:(LHWbAuthentication *)auth
                         user:(LHUser *)user;
 
+
+// 写入归档
+-(void)writeUserInfoToDocuments;
+
+//读取归档
+-(void)readUserInfoFromDocuments;
+
 @end

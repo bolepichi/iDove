@@ -12,7 +12,7 @@
 
 #import "THViewController.h"
 
-#import "THTabBarViewController.h"
+#import "LHWbAccount.h"
 
 @interface THAppDelegate () <WeiboSDKDelegate>
 
@@ -27,7 +27,7 @@
     // Override point for customization after application launch.
     
     [WeiboSDK enableDebugMode:YES];
-    [WeiboSDK registerApp:@"692164544"];
+    [WeiboSDK registerApp:kAppKey];
     
     
     
@@ -99,8 +99,8 @@
 
 -(void)didReceiveWeiboRequest:(WBBaseRequest *)request
 {
-    
 
+    
     
 }
 
@@ -108,7 +108,23 @@
 -(void)didReceiveWeiboResponse:(WBBaseResponse *)response
 {
     
+    WBAuthorizeResponse *authResponse = (WBAuthorizeResponse *)response;
     
+    
+    
+    LHWbAuthentication *authentication = [[LHWbAuthentication alloc]initWithAuthorizeID:authResponse.userID accessToken:authResponse.accessToken expirationDate:authResponse.expirationDate AppKey:kAppKey appSecret:kAppSecret];
+    
+    
+    
+    NSDictionary *dic = @{};
+    
+    LHUser *user = [[LHUser alloc]initWithJsonDictionary:dic];
+    
+    
+    
+    LHWbAccount * wbAccount = [[LHWbAccount alloc]initWithAuthentication:authentication user:user];
+    
+    [wbAccount writeUserInfoToDocuments];
     
     
 }
