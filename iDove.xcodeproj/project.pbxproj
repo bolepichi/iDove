@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18DF42CF1981015D00E93FD7 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18DF42CE1981015D00E93FD7 /* LoginViewController.xib */; };
+		18DF42D21981087600E93FD7 /* btn_login@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18DF42D01981087600E93FD7 /* btn_login@2x.png */; };
+		18DF42D31981087600E93FD7 /* image_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18DF42D11981087600E93FD7 /* image_icon@2x.png */; };
+		18DF42D719810B0800E93FD7 /* THStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DF42D619810B0800E93FD7 /* THStatusCell.m */; };
 		18E00E24197F88DB00659B82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E00E23197F88DB00659B82 /* Foundation.framework */; };
 		18E00E26197F88DB00659B82 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E00E25197F88DB00659B82 /* CoreGraphics.framework */; };
 		18E00E28197F88DB00659B82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E00E27197F88DB00659B82 /* UIKit.framework */; };
@@ -48,7 +52,6 @@
 		4A2F9232197FBE7400278825 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		4AB9DE8A1980A701002ACB07 /* LHWbAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB9DE891980A701002ACB07 /* LHWbAuthentication.m */; };
 		4AB9DE8E1980E0E3002ACB07 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB9DE8C1980E0E3002ACB07 /* LoginViewController.m */; };
-		4AB9DE8F1980E0E3002ACB07 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AB9DE8D1980E0E3002ACB07 /* LoginViewController.xib */; };
 		4AB9DED31980F01F002ACB07 /* RequestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB9DED21980F01F002ACB07 /* RequestData.m */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +66,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18DF42CE1981015D00E93FD7 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		18DF42D01981087600E93FD7 /* btn_login@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_login@2x.png"; sourceTree = "<group>"; };
+		18DF42D11981087600E93FD7 /* image_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_icon@2x.png"; sourceTree = "<group>"; };
+		18DF42D519810B0800E93FD7 /* THStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THStatusCell.h; sourceTree = "<group>"; };
+		18DF42D619810B0800E93FD7 /* THStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THStatusCell.m; sourceTree = "<group>"; };
 		18E00E20197F88DB00659B82 /* iDove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E00E23197F88DB00659B82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18E00E25197F88DB00659B82 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,7 +129,6 @@
 		4AB9DE891980A701002ACB07 /* LHWbAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHWbAuthentication.m; sourceTree = "<group>"; };
 		4AB9DE8B1980E0E3002ACB07 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		4AB9DE8C1980E0E3002ACB07 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		4AB9DE8D1980E0E3002ACB07 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		4AB9DED11980F01F002ACB07 /* RequestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestData.h; sourceTree = "<group>"; };
 		4AB9DED21980F01F002ACB07 /* RequestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestData.m; sourceTree = "<group>"; };
 		7652F1DBB99D478A8C78FF0C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +164,8 @@
 		021BA5341980021800507803 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				18DF42D01981087600E93FD7 /* btn_login@2x.png */,
+				18DF42D11981087600E93FD7 /* image_icon@2x.png */,
 				18FCC4E01980A36B00CBB43C /* Tabbar */,
 			);
 			name = Resource;
@@ -165,6 +174,9 @@
 		18DA7D6E197FAFE60060783A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4AB9DE8B1980E0E3002ACB07 /* LoginViewController.h */,
+				4AB9DE8C1980E0E3002ACB07 /* LoginViewController.m */,
+				18DF42CE1981015D00E93FD7 /* LoginViewController.xib */,
 				18FCC4E31980ABA900CBB43C /* THTabBarController.h */,
 				18FCC4E41980ABA900CBB43C /* THTabBarController.m */,
 				18FCC4E81980AF0B00CBB43C /* LHStatuseTableViewController.h */,
@@ -178,6 +190,15 @@
 				18FCC4F41980AFBC00CBB43C /* THUserCenterViewController.xib */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		18DF42D419810A8400E93FD7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18DF42D519810B0800E93FD7 /* THStatusCell.h */,
+				18DF42D619810B0800E93FD7 /* THStatusCell.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		18E00E17197F88DA00659B82 = {
@@ -222,9 +243,7 @@
 				18E00E32197F88DB00659B82 /* THAppDelegate.h */,
 				18E00E33197F88DB00659B82 /* THAppDelegate.m */,
 				18DA7D6E197FAFE60060783A /* Controller */,
-				4AB9DE8B1980E0E3002ACB07 /* LoginViewController.h */,
-				4AB9DE8C1980E0E3002ACB07 /* LoginViewController.m */,
-				4AB9DE8D1980E0E3002ACB07 /* LoginViewController.xib */,
+				18DF42D419810A8400E93FD7 /* Views */,
 				18E00E3B197F88DB00659B82 /* Images.xcassets */,
 				18E00E2A197F88DB00659B82 /* Supporting Files */,
 			);
@@ -398,6 +417,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18DF42CF1981015D00E93FD7 /* LoginViewController.xib in Resources */,
 				18FCC50A1980DBF300CBB43C /* tabimageselect3@2x.png in Resources */,
 				18FCC5051980DBF300CBB43C /* tabimage2@2x.png in Resources */,
 				18FCC5041980DBF300CBB43C /* tabimage1@2x.png in Resources */,
@@ -406,6 +426,8 @@
 				18FCC5061980DBF300CBB43C /* tabimage3@2x.png in Resources */,
 				18FCC4EC1980AF0B00CBB43C /* LHStatuseTableViewController.xib in Resources */,
 				18E00E3C197F88DB00659B82 /* Images.xcassets in Resources */,
+				18DF42D31981087600E93FD7 /* image_icon@2x.png in Resources */,
+				18DF42D21981087600E93FD7 /* btn_login@2x.png in Resources */,
 				18FCC4F61980AFBC00CBB43C /* THUserCenterViewController.xib in Resources */,
 				18E00E2E197F88DB00659B82 /* InfoPlist.strings in Resources */,
 				18FCC4FB1980B08800CBB43C /* THSearchViewController.xib in Resources */,
@@ -481,6 +503,7 @@
 				18E00E6D197F89AC00659B82 /* LHUser.m in Sources */,
 				18E00E6C197F89AC00659B82 /* LHWbAccount.m in Sources */,
 				18FCC4E61980ABA900CBB43C /* THTabBarController.m in Sources */,
+				18DF42D719810B0800E93FD7 /* THStatusCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
