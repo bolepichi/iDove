@@ -36,10 +36,26 @@
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    LoginViewController *loginVC = [[LoginViewController alloc]initWithNibName:@"LoginViewController" bundle:nil];
+
+    LHWbAccount *account = [LHWbAccount readUserInfoFromDocuments];
     
-    THTabBarController * tabbarViewController = [[THTabBarController alloc] initWithNibName:nil bundle:nil];
-    self.window.rootViewController = loginVC;
+    if (account.userId) {
+        
+        THTabBarController * tabbarViewController = [[THTabBarController alloc] initWithNibName:nil bundle:nil];
+        
+        self.window.rootViewController = tabbarViewController;
+        
+    }else {
+        
+        LoginViewController *loginVC = [[LoginViewController alloc]initWithNibName:@"LoginViewController" bundle:nil];
+        
+        self.window.rootViewController = loginVC;
+        
+    }
+    
+    
+    
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
