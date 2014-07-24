@@ -64,11 +64,25 @@
     self.tabBar.hidden =YES;
     // Do any additional setup after loading the view from its nib.
     
+    
+   CGRect screen =[[UIScreen mainScreen] bounds];
+    
+    UIView *tabbarbackview = [[UIView alloc] initWithFrame:CGRectMake(0, screen.size.height-49, screen.size.width, 49)];
+    
+    for (int i=0; i<self.viewControllers.count+1; i++) {
+        
+        UIButton *tab_button = [self creattabbarButtonWithIndex:i];
+        
+        [tabbarbackview addSubview:tab_button];
+    }
+    
+    
+    
 
 }
 
 
--(void)creattabbarButtonWith:(UIImage*)image WithSelectImage:(UIImage*)selectImage WithIndex:(NSInteger)index{
+-(UIButton*)creattabbarButtonWithIndex:(NSInteger)index{
     
     UIButton *tab_button = [UIButton buttonWithType:UIButtonTypeCustom];
     
@@ -79,6 +93,8 @@
     [tab_button addTarget:self action:@selector(changeViewController:) forControlEvents:UIControlEventTouchUpInside];
     
     [tab_button setFrame:CGRectMake(0*(int)index, 0, 320/4, 49)];
+    
+    return tab_button;
 }
 
 

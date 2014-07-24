@@ -14,6 +14,10 @@
 
 #import "LHWbAccount.h"
 
+#import "THTabBarController.h"
+
+
+
 @interface THAppDelegate () <WeiboSDKDelegate>
 
 
@@ -26,34 +30,15 @@
 {
     // Override point for customization after application launch.
     
-    [WeiboSDK enableDebugMode:YES];
+    [WeiboSDK enableDebugMode:NO];
     [WeiboSDK registerApp:kAppKey];
+
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    
-    
-    
-    
-    UITabBarController * tabbarcontroller = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"THTabBarViewController"];
-    
-    
-    UITabBar *tabbar = tabbarcontroller.tabBar;
-    
-    
-    UITabBarItem *tabbarItem1 = tabbar.items[0];
-    
-    tabbarItem1.selectedImage = [UIImage imageNamed:@"tabbackgroundselect"];
-    
-    tabbarItem1.title = @"lkj";
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    THTabBarController * tabbarViewController = [[THTabBarController alloc] initWithNibName:nil bundle:nil];
+    self.window.rootViewController = tabbarViewController;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							
