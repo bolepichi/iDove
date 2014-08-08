@@ -53,6 +53,25 @@
 		4AB9DE8A1980A701002ACB07 /* LHWbAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB9DE891980A701002ACB07 /* LHWbAuthentication.m */; };
 		4AB9DE8E1980E0E3002ACB07 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB9DE8C1980E0E3002ACB07 /* LoginViewController.m */; };
 		4AB9DED31980F01F002ACB07 /* RequestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB9DED21980F01F002ACB07 /* RequestData.m */; };
+		4AE1DD89199377D5003D1D9D /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE1DD88199377D5003D1D9D /* libicucore.dylib */; };
+		4AE1DD8C199377FF003D1D9D /* LHStatusFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE1DD8B199377FF003D1D9D /* LHStatusFrame.m */; };
+		4AE1DDA41993782D003D1D9D /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE1DD911993782D003D1D9D /* MBProgressHUD+Add.m */; };
+		4AE1DDA51993782D003D1D9D /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4AE1DD921993782D003D1D9D /* MBProgressHUD.bundle */; };
+		4AE1DDA61993782D003D1D9D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE1DD941993782D003D1D9D /* MBProgressHUD.m */; };
+		4AE1DDA71993782D003D1D9D /* MJPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE1DD971993782D003D1D9D /* MJPhoto.m */; };
+		4AE1DDA81993782D003D1D9D /* MJPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4AE1DD981993782D003D1D9D /* MJPhotoBrowser.bundle */; };
+		4AE1DDA91993782D003D1D9D /* MJPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE1DD9A1993782D003D1D9D /* MJPhotoBrowser.m */; };
+		4AE1DDAA1993782D003D1D9D /* MJPhotoLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE1DD9C1993782D003D1D9D /* MJPhotoLoadingView.m */; };
+		4AE1DDAB1993782D003D1D9D /* MJPhotoProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE1DD9E1993782D003D1D9D /* MJPhotoProgressView.m */; };
+		4AE1DDAC1993782D003D1D9D /* MJPhotoToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE1DDA01993782D003D1D9D /* MJPhotoToolbar.m */; };
+		4AE1DDAD1993782D003D1D9D /* MJPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE1DDA21993782D003D1D9D /* MJPhotoView.m */; };
+		4AE1DDB419937866003D1D9D /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE1DDB119937866003D1D9D /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4AE1DDB519937866003D1D9D /* HtmlString.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE1DDB319937866003D1D9D /* HtmlString.m */; };
+		4AE1DDC11993787B003D1D9D /* THStatusOriginalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE1DDB81993787B003D1D9D /* THStatusOriginalView.m */; };
+		4AE1DDC21993787B003D1D9D /* THStatusRepostedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE1DDBA1993787B003D1D9D /* THStatusRepostedView.m */; };
+		4AE1DDC31993787B003D1D9D /* THStatusToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE1DDBC1993787B003D1D9D /* THStatusToolbar.m */; };
+		4AE1DDC41993787B003D1D9D /* THPhotoesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE1DDBE1993787B003D1D9D /* THPhotoesView.m */; };
+		4AE1DDC51993787B003D1D9D /* THPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE1DDC01993787B003D1D9D /* THPhotoView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +150,42 @@
 		4AB9DE8C1980E0E3002ACB07 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		4AB9DED11980F01F002ACB07 /* RequestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestData.h; sourceTree = "<group>"; };
 		4AB9DED21980F01F002ACB07 /* RequestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestData.m; sourceTree = "<group>"; };
+		4AE1DD88199377D5003D1D9D /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		4AE1DD8A199377FF003D1D9D /* LHStatusFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHStatusFrame.h; sourceTree = "<group>"; };
+		4AE1DD8B199377FF003D1D9D /* LHStatusFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHStatusFrame.m; sourceTree = "<group>"; };
+		4AE1DD901993782D003D1D9D /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
+		4AE1DD911993782D003D1D9D /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
+		4AE1DD921993782D003D1D9D /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		4AE1DD931993782D003D1D9D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		4AE1DD941993782D003D1D9D /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		4AE1DD961993782D003D1D9D /* MJPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhoto.h; sourceTree = "<group>"; };
+		4AE1DD971993782D003D1D9D /* MJPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhoto.m; sourceTree = "<group>"; };
+		4AE1DD981993782D003D1D9D /* MJPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJPhotoBrowser.bundle; sourceTree = "<group>"; };
+		4AE1DD991993782D003D1D9D /* MJPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoBrowser.h; sourceTree = "<group>"; };
+		4AE1DD9A1993782D003D1D9D /* MJPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoBrowser.m; sourceTree = "<group>"; };
+		4AE1DD9B1993782D003D1D9D /* MJPhotoLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoLoadingView.h; sourceTree = "<group>"; };
+		4AE1DD9C1993782D003D1D9D /* MJPhotoLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoLoadingView.m; sourceTree = "<group>"; };
+		4AE1DD9D1993782D003D1D9D /* MJPhotoProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoProgressView.h; sourceTree = "<group>"; };
+		4AE1DD9E1993782D003D1D9D /* MJPhotoProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoProgressView.m; sourceTree = "<group>"; };
+		4AE1DD9F1993782D003D1D9D /* MJPhotoToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoToolbar.h; sourceTree = "<group>"; };
+		4AE1DDA01993782D003D1D9D /* MJPhotoToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoToolbar.m; sourceTree = "<group>"; };
+		4AE1DDA11993782D003D1D9D /* MJPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoView.h; sourceTree = "<group>"; };
+		4AE1DDA21993782D003D1D9D /* MJPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoView.m; sourceTree = "<group>"; };
+		4AE1DDB019937866003D1D9D /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		4AE1DDB119937866003D1D9D /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		4AE1DDB219937866003D1D9D /* HtmlString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HtmlString.h; sourceTree = "<group>"; };
+		4AE1DDB319937866003D1D9D /* HtmlString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HtmlString.m; sourceTree = "<group>"; };
+		4AE1DDB71993787B003D1D9D /* THStatusOriginalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THStatusOriginalView.h; sourceTree = "<group>"; };
+		4AE1DDB81993787B003D1D9D /* THStatusOriginalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THStatusOriginalView.m; sourceTree = "<group>"; };
+		4AE1DDB91993787B003D1D9D /* THStatusRepostedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THStatusRepostedView.h; sourceTree = "<group>"; };
+		4AE1DDBA1993787B003D1D9D /* THStatusRepostedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THStatusRepostedView.m; sourceTree = "<group>"; };
+		4AE1DDBB1993787B003D1D9D /* THStatusToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THStatusToolbar.h; sourceTree = "<group>"; };
+		4AE1DDBC1993787B003D1D9D /* THStatusToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THStatusToolbar.m; sourceTree = "<group>"; };
+		4AE1DDBD1993787B003D1D9D /* THPhotoesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPhotoesView.h; sourceTree = "<group>"; };
+		4AE1DDBE1993787B003D1D9D /* THPhotoesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPhotoesView.m; sourceTree = "<group>"; };
+		4AE1DDBF1993787B003D1D9D /* THPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPhotoView.h; sourceTree = "<group>"; };
+		4AE1DDC01993787B003D1D9D /* THPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPhotoView.m; sourceTree = "<group>"; };
+		4AE1DDC6199378E9003D1D9D /* THCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THCommon.h; sourceTree = "<group>"; };
 		7652F1DBB99D478A8C78FF0C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A12B419CA91F4D00A83A1210 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +195,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE1DD89199377D5003D1D9D /* libicucore.dylib in Frameworks */,
 				18E00E26197F88DB00659B82 /* CoreGraphics.framework in Frameworks */,
 				18E00E28197F88DB00659B82 /* UIKit.framework in Frameworks */,
 				18E00E24197F88DB00659B82 /* Foundation.framework in Frameworks */,
@@ -195,8 +251,8 @@
 		18DF42D419810A8400E93FD7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				18DF42D519810B0800E93FD7 /* THStatusCell.h */,
-				18DF42D619810B0800E93FD7 /* THStatusCell.m */,
+				4AE1DD8E1993782D003D1D9D /* lib */,
+				4AE1DDAE19937837003D1D9D /* StatusCell */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -224,6 +280,7 @@
 		18E00E22197F88DB00659B82 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4AE1DD88199377D5003D1D9D /* libicucore.dylib */,
 				18E00E23197F88DB00659B82 /* Foundation.framework */,
 				18E00E25197F88DB00659B82 /* CoreGraphics.framework */,
 				18E00E27197F88DB00659B82 /* UIKit.framework */,
@@ -257,6 +314,7 @@
 				18E00E2C197F88DB00659B82 /* InfoPlist.strings */,
 				18E00E2F197F88DB00659B82 /* main.m */,
 				18E00E31197F88DB00659B82 /* iDove-Prefix.pch */,
+				4AE1DDC6199378E9003D1D9D /* THCommon.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -304,6 +362,8 @@
 				18E00E68197F89AC00659B82 /* LHStatus.m */,
 				18E00E69197F89AC00659B82 /* LHStatusVisible.h */,
 				18E00E6A197F89AC00659B82 /* LHStatusVisible.m */,
+				4AE1DD8A199377FF003D1D9D /* LHStatusFrame.h */,
+				4AE1DD8B199377FF003D1D9D /* LHStatusFrame.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -336,6 +396,94 @@
 				18FCC5031980DBF300CBB43C /* tabimageselect4@2x.png */,
 			);
 			name = Tabbar;
+			sourceTree = "<group>";
+		};
+		4AE1DD8E1993782D003D1D9D /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				4AE1DD8F1993782D003D1D9D /* MBProgressHUD */,
+				4AE1DD951993782D003D1D9D /* MJPhotoBrowser */,
+				4AE1DDA31993782D003D1D9D /* SDWebImage */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		4AE1DD8F1993782D003D1D9D /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				4AE1DD901993782D003D1D9D /* MBProgressHUD+Add.h */,
+				4AE1DD911993782D003D1D9D /* MBProgressHUD+Add.m */,
+				4AE1DD921993782D003D1D9D /* MBProgressHUD.bundle */,
+				4AE1DD931993782D003D1D9D /* MBProgressHUD.h */,
+				4AE1DD941993782D003D1D9D /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		4AE1DD951993782D003D1D9D /* MJPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				4AE1DD961993782D003D1D9D /* MJPhoto.h */,
+				4AE1DD971993782D003D1D9D /* MJPhoto.m */,
+				4AE1DD981993782D003D1D9D /* MJPhotoBrowser.bundle */,
+				4AE1DD991993782D003D1D9D /* MJPhotoBrowser.h */,
+				4AE1DD9A1993782D003D1D9D /* MJPhotoBrowser.m */,
+				4AE1DD9B1993782D003D1D9D /* MJPhotoLoadingView.h */,
+				4AE1DD9C1993782D003D1D9D /* MJPhotoLoadingView.m */,
+				4AE1DD9D1993782D003D1D9D /* MJPhotoProgressView.h */,
+				4AE1DD9E1993782D003D1D9D /* MJPhotoProgressView.m */,
+				4AE1DD9F1993782D003D1D9D /* MJPhotoToolbar.h */,
+				4AE1DDA01993782D003D1D9D /* MJPhotoToolbar.m */,
+				4AE1DDA11993782D003D1D9D /* MJPhotoView.h */,
+				4AE1DDA21993782D003D1D9D /* MJPhotoView.m */,
+			);
+			path = MJPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		4AE1DDA31993782D003D1D9D /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		4AE1DDAE19937837003D1D9D /* StatusCell */ = {
+			isa = PBXGroup;
+			children = (
+				4AE1DDAF1993784E003D1D9D /* ContentModal */,
+				4AE1DDB61993786B003D1D9D /* StatusViews */,
+				18DF42D519810B0800E93FD7 /* THStatusCell.h */,
+				18DF42D619810B0800E93FD7 /* THStatusCell.m */,
+			);
+			name = StatusCell;
+			sourceTree = "<group>";
+		};
+		4AE1DDAF1993784E003D1D9D /* ContentModal */ = {
+			isa = PBXGroup;
+			children = (
+				4AE1DDB019937866003D1D9D /* RegexKitLite.h */,
+				4AE1DDB119937866003D1D9D /* RegexKitLite.m */,
+				4AE1DDB219937866003D1D9D /* HtmlString.h */,
+				4AE1DDB319937866003D1D9D /* HtmlString.m */,
+			);
+			name = ContentModal;
+			sourceTree = "<group>";
+		};
+		4AE1DDB61993786B003D1D9D /* StatusViews */ = {
+			isa = PBXGroup;
+			children = (
+				4AE1DDB71993787B003D1D9D /* THStatusOriginalView.h */,
+				4AE1DDB81993787B003D1D9D /* THStatusOriginalView.m */,
+				4AE1DDB91993787B003D1D9D /* THStatusRepostedView.h */,
+				4AE1DDBA1993787B003D1D9D /* THStatusRepostedView.m */,
+				4AE1DDBB1993787B003D1D9D /* THStatusToolbar.h */,
+				4AE1DDBC1993787B003D1D9D /* THStatusToolbar.m */,
+				4AE1DDBD1993787B003D1D9D /* THPhotoesView.h */,
+				4AE1DDBE1993787B003D1D9D /* THPhotoesView.m */,
+				4AE1DDBF1993787B003D1D9D /* THPhotoView.h */,
+				4AE1DDC01993787B003D1D9D /* THPhotoView.m */,
+			);
+			name = StatusViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,10 +566,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				18DF42CF1981015D00E93FD7 /* LoginViewController.xib in Resources */,
+				4AE1DDA81993782D003D1D9D /* MJPhotoBrowser.bundle in Resources */,
 				18FCC50A1980DBF300CBB43C /* tabimageselect3@2x.png in Resources */,
 				18FCC5051980DBF300CBB43C /* tabimage2@2x.png in Resources */,
 				18FCC5041980DBF300CBB43C /* tabimage1@2x.png in Resources */,
 				18FCC5071980DBF300CBB43C /* tabimage4@2x.png in Resources */,
+				4AE1DDA51993782D003D1D9D /* MBProgressHUD.bundle in Resources */,
 				18FCC50B1980DBF300CBB43C /* tabimageselect4@2x.png in Resources */,
 				18FCC5061980DBF300CBB43C /* tabimage3@2x.png in Resources */,
 				18FCC4EC1980AF0B00CBB43C /* LHStatuseTableViewController.xib in Resources */,
@@ -486,22 +636,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A2F9232197FBE7400278825 /* (null) in Sources */,
+				4AE1DDB419937866003D1D9D /* RegexKitLite.m in Sources */,
+				4AE1DDA41993782D003D1D9D /* MBProgressHUD+Add.m in Sources */,
+				4AE1DDB519937866003D1D9D /* HtmlString.m in Sources */,
+				4AE1DDAA1993782D003D1D9D /* MJPhotoLoadingView.m in Sources */,
 				18FCC4F51980AFBC00CBB43C /* THUserCenterViewController.m in Sources */,
+				4AE1DDAD1993782D003D1D9D /* MJPhotoView.m in Sources */,
 				18E00E6E197F89AC00659B82 /* LHGeo.m in Sources */,
 				18E00E34197F88DB00659B82 /* THAppDelegate.m in Sources */,
 				18E00E30197F88DB00659B82 /* main.m in Sources */,
+				4AE1DDC11993787B003D1D9D /* THStatusOriginalView.m in Sources */,
 				18E00E79197F8A4200659B82 /* NSDictionary+Json.m in Sources */,
 				18FCC4FA1980B08800CBB43C /* THSearchViewController.m in Sources */,
 				18FCC4EB1980AF0B00CBB43C /* LHStatuseTableViewController.m in Sources */,
 				18E00E7A197F8A4200659B82 /* LHPathHelper.m in Sources */,
 				18E00E6F197F89AC00659B82 /* LHStatus.m in Sources */,
 				18E00E70197F89AC00659B82 /* LHStatusVisible.m in Sources */,
+				4AE1DDC41993787B003D1D9D /* THPhotoesView.m in Sources */,
 				4AB9DE8A1980A701002ACB07 /* LHWbAuthentication.m in Sources */,
+				4AE1DDC21993787B003D1D9D /* THStatusRepostedView.m in Sources */,
 				18E00E78197F8A4200659B82 /* Resources.m in Sources */,
+				4AE1DDAB1993782D003D1D9D /* MJPhotoProgressView.m in Sources */,
+				4AE1DDA71993782D003D1D9D /* MJPhoto.m in Sources */,
 				4AB9DED31980F01F002ACB07 /* RequestData.m in Sources */,
+				4AE1DDAC1993782D003D1D9D /* MJPhotoToolbar.m in Sources */,
+				4AE1DDA91993782D003D1D9D /* MJPhotoBrowser.m in Sources */,
+				4AE1DDA61993782D003D1D9D /* MBProgressHUD.m in Sources */,
 				4AB9DE8E1980E0E3002ACB07 /* LoginViewController.m in Sources */,
+				4AE1DDC31993787B003D1D9D /* THStatusToolbar.m in Sources */,
 				18E00E6D197F89AC00659B82 /* LHUser.m in Sources */,
+				4AE1DDC51993787B003D1D9D /* THPhotoView.m in Sources */,
 				18E00E6C197F89AC00659B82 /* LHWbAccount.m in Sources */,
+				4AE1DD8C199377FF003D1D9D /* LHStatusFrame.m in Sources */,
 				18FCC4E61980ABA900CBB43C /* THTabBarController.m in Sources */,
 				18DF42D719810B0800E93FD7 /* THStatusCell.m in Sources */,
 			);

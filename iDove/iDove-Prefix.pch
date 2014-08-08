@@ -11,9 +11,15 @@
 #endif
 
 #ifdef __OBJC__
-    #import <UIKit/UIKit.h>
-    #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "THCommon.h"
+
 #endif
+
+
+
 
 
 
@@ -22,8 +28,18 @@
 #define kRedirectURL @"http://www.idove.com"
 
 
+
+
+
+
 #define url_user @"https://api.weibo.com/2/users/show.json?"
 
 #define url_geoLocation @"https://api.weibo.com/2/location/geo/geo_to_address.json"
 
+#define url_homeStatus @"https://api.weibo.com/2/statuses/home_timeline.json"
+
 #define url_statusFriends @"https://api.weibo.com/2/statuses/friends_timeline.json"
+
+#define url_search @"https://api.weibo.com/2/search/topics.json"
+
+#define url_friendships  @"https://api.weibo.com/2/friendships/groups.json"

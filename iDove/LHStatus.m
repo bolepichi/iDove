@@ -121,7 +121,7 @@
     [encoder encodeObject:self.sourceUrl forKey:@"sourceUrl"];
     [encoder encodeBool:self.favorited forKey:@"favorited"];
     [encoder encodeBool:self.truncated forKey:@"truncated"];
-    [encoder encodeBool:self.images forKey:@"images"];
+    [encoder encodeObject:self.images forKey:@"images"];
     [encoder encodeObject:self.thumbnailPic forKey:@"thumbnailPic"];
     [encoder encodeInt:self.repostsCount forKey:@"repostsCounent"];
     [encoder encodeInt:self.commentsCount forKey:@"commentsCount"];

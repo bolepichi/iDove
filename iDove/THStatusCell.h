@@ -8,15 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-#import "LHStatus.h"
+#import "LHStatusFrame.h"
 
+#import "THStatusOriginalView.h"
 
-@interface THStatusCell : UITableViewCell
-
+@interface THStatusCell : UITableViewCell <UIWebViewDelegate>
 
 @property (nonatomic,strong)LHStatus *status;
 
--(void)initWithDictionary:(NSDictionary*)dic;
+
+@property (nonatomic, strong) LHStatusFrame *statusFrame;
 
 
 @end
